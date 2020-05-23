@@ -6,6 +6,6 @@ services:
   production:
     image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
     volumes:
-      - .:/code
+      - .:/app
     ports:
       - "80:80"
