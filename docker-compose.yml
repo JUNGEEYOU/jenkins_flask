@@ -5,7 +5,6 @@ services:
     image: ${DOCKER_USER_ID}/flask
   production:
     image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
-    command: python ./app.py
     volumes:
       - .:/app
     ports:
