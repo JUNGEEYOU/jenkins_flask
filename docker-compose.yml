@@ -3,7 +3,6 @@ services:
   web:
     build: .
     image: ${DOCKER_USER_ID}/flask
-    command: python app.py 0.0.0.0:80
   production:
     image: ${DOCKER_USER_ID}/flask:${BUILD_NUMBER}
     command: python app.py
